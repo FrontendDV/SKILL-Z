@@ -1,0 +1,16 @@
+$(function(){
+    $('#menuBtn').click(function(){
+        $('#hidden-menu').animate({width:'toggle'},500)
+    })
+    $('#closeBtn').click(function(){
+        $('#hidden-menu').animate({width:'toggle'},500)
+    })
+    $('#js').click(function(){
+        $('#hidden-menu').animate({width:'toggle'},500)
+        $('#closeBtn').addClass('none')
+    })
+    $('#jQuery').click(function(){
+        $('#hidden-menu').animate({width:'toggle'},500)
+        $('#closeBtn').addClass('none')
+    })
+})

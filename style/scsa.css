@@ -1,0 +1,365 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container{
+    margin: 0 auto;
+}
+.h1{
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: black;
+    letter-spacing: 0.3rem;
+    transition: all 0.1s linear 0.1s;
+}
+.span{
+    color: #00d4ff;
+}
+.h1:hover{
+    border-bottom: 3px solid #00d4ff;
+    filter: blur(0.5px);
+}
+.a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 500;
+    color: black;
+    transition: all 0.1s linear 0.1s;
+}
+.a:hover{
+    color: #00d4ff;
+}
+.img{
+    width: 30px;
+    height: 30px;
+}
+/* Hamburge Menu */
+
+.MenuIcon{
+    position: absolute;
+    top: 6%;
+    right: 15%;
+    display: none;
+}
+/* 3 Fixed color changers */
+.buttonSection{
+    display: flex;
+    flex-direction: column;
+}
+.buttonDiv{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    position: fixed;
+    top: 30%;
+    right: 0;
+}
+.button{
+    background-color: #00d4ff;
+    padding: 20px;
+    border: none;
+    border-radius: 50px;
+    margin-top: 50px;
+    font-size: 20px;
+    font-family: 'Roboto',sans-serif;
+    transition: all 0.1s linear 0.1s;
+    width: 150px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}
+.button:nth-child(1):hover{
+    background-color: #e4443f;
+    color: white;
+    font-weight: 800;
+    font-family: 'Roboto',sans-serif;
+}
+.redBtn{
+    background-color: #e4443f;
+    border-radius: 50px;
+}
+.button:nth-child(2):hover{
+    background-color: #7dca5c;
+    color: white;
+    font-weight: 800;
+    font-family: 'Roboto',sans-serif;
+}
+.greenBtn{
+    background-color: #7dca5c;
+    border-radius: 50px;
+}
+.button:nth-child(3):hover{
+    background-color: #46a5a3;
+    color: white;
+    font-weight: 800;
+    font-family: 'Roboto',sans-serif;
+}
+.blueBtn{
+    background-color: #46a5a3;
+    border-radius: 50px;
+}
+
+/* Input section */
+.inputSection{
+    display: flex;
+    flex-direction: column;
+}
+.inputDiv{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    position: absolute;
+    top: 30%;
+    left: 12%;
+}
+.input{
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    font-size: 16px;
+    background-color: transparent;
+    border-bottom: 1px solid rgb(128,128,128,0.2);
+    color: black;
+    font-weight: 500;
+    outline: none;
+    transition: all 0.1s ease ;
+    
+}
+.input:hover{
+    font-size: 15px;
+    
+}
+.label{
+    font-size: 15px;
+    font-weight: 700;
+}
+.label:hover{
+    font-size: 16px;
+}
+
+/* submit button */
+.submitInfo{
+    padding: 20px;
+    border-radius: 100px;
+    border: none; 
+    background-color: #00D100;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    word-spacing: 2px;
+    letter-spacing: 0.1rem;
+    box-shadow: #00D100 0px 5px 30px ;
+    transition: all 0.2s linear 0.2s;
+    cursor: pointer;
+}
+.aboutUs{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 12%;
+    margin-top: 100px;
+    padding-bottom: 50px;
+}
+.aboutDiv{
+    background-color: rgb(128,128,128,0.1);
+    padding: 50px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 25px 50px rgb(128,128,128,0.2);
+}
+.h3{
+    display: flex;
+    font-size: 20px;
+    color: rgb(179, 179, 179);
+    border-bottom: 2px solid rgb(128,128,128,0.2);
+}
+p{
+    margin: 0;
+    display: flex;
+    font-weight: 500;
+    margin-left: 5px;
+    color: black;
+}
+.h2{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Roboto',sans-serif;
+    letter-spacing: 0.25rem;
+    border-bottom: 3px solid rgb(128,128,128,0.2);
+}
+.buttonClear{
+    padding: 20px;
+    border-radius: 100px;
+    border: none; 
+    background-color: #00d4ff;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    word-spacing: 2px;
+    width: 250px;
+    letter-spacing: 0.1rem;
+    box-shadow: #00d4ff 0px 5px 30px ;
+    transition: all 0.1s linear 0.1s;
+    margin-top: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+.buttonClear:hover{
+    color: white;
+    background-color: #00D100;
+    box-shadow: #00D100 0px 5px 30px ;
+    font-size: 21px;
+}
+.clean{
+    margin-left: 10px;
+}
+
+/* FAQ page */
+.questionSection{
+    position: absolute;
+    top: 20%;
+    left: 13%;
+}
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.5s;
+}
+.panel {
+    padding: 0 18px;
+    background-color: rgb(128,128,128,0.1);
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s linear 0.2s;
+}
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.questionDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.questionOne{
+    background-color: rgb(255,255,102);
+    padding: 30px;
+    margin-top: 10px;
+}
+.deleteBtn{
+    background-color: #fc4445;
+    padding: 10px;
+    display: flex;
+    width: 150px;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    font: 15px;
+    color: white;
+    font-weight: 700;
+}
+.delete{
+    display: none;
+}
+.none{
+    display: none;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #000; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #000; 
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 576px){
+    
+    .a{
+        display: none;
+    }
+    .img{
+        display: none;
+    }
+    .MenuIcon{
+        display: block;
+        top: 10%;
+        right: 5%;
+    }
+    .inputDiv{
+        left: 5%;   
+    }
+    .aboutUs{
+        left: 0;
+    }
+    .buttonClear{
+        width: auto;
+    }
+    .button:nth-child(1){
+        font-size: 15px;
+        padding: 10px;
+    }
+    .button:nth-child(2){
+        font-size: 15px;
+        padding: 10px;
+    }
+    .button:nth-child(3){
+        font-size: 15px;
+        padding: 10px;
+    }
+    .questionSection{
+        left: 0;
+    }
+    .buttonClear{
+        width: 200px;
+    }
+    
+    
+
+}
